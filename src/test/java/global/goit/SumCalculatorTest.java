@@ -28,7 +28,7 @@ class SumCalculatorTest {
     }
 
     @Test
-    void shouldHandleSingleNumber() {
+    void shouldHandleNumberFive() {
         assertEquals(15, calc.sum(5), "Сума для 5 має дорівнювати 15");
     }
 
