@@ -28,6 +28,11 @@ class SumCalculatorTest {
     }
 
     @Test
+    void shouldHandleSingleNumber() {
+        assertEquals(15, calc.sum(5), "Сума для 5 має дорівнювати 15");
+    }
+
+    @Test
     public void shouldThrowExceptionWhenInputIsZeroOrNegative() {
         Assertions.assertThrows(IllegalArgumentException.class,
                 () -> calc.sum(0));
